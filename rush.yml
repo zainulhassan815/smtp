@@ -3,7 +3,7 @@
 
 ---
 name: Smtp
-description: Extension component for Smtp. Created using Rush.
+description: SMTP extension for AppInventor and Distros. Icon by <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">IconMarketPK - Flaticon</a>.
 
 version:
   number: auto
@@ -18,12 +18,12 @@ build:
     optimize: true
 
   kotlin:
-    enable: false
+    enable: true
 
   # If enabled, you will be able to use Java 8 language features in your extension.
   desugar:
     enable: true
-    desugar_deps: false
+    desugar_deps: true
 
 assets:
   # Extension icon. This can be a URL or a local image in 'assets' folder.

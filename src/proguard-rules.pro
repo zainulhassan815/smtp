@@ -14,14 +14,9 @@
 -flattenpackagehierarchy
 -dontpreverify
 
--dontwarn java.lang.invoke.LambdaMetafactory
+-keep class com.sun.activation.registries.* { *; }
+-keep class javax.activation.* { *; }
+-keep class com.sun.mail.** {*;}
 
--dontshrink
--keep class javax.** {*;}
--keep class com.sun.** {*;}
--keep class myjava.** {*;}
--keep class org.apache.harmony.** {*;}
--dontwarn java.awt.**
--dontwarn java.beans.Beans
--dontwarn javax.security.**
+-dontwarn java.lang.invoke.LambdaMetafactory
 -dontwarn com.sun.mail.handlers.handler_base
